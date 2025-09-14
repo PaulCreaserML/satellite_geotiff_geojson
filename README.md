@@ -1,4 +1,4 @@
-#GeoJSON and Shapely Demonstration
+# GeoJSON and Shapely Demonstration
 This Python script provides a practical example of how to use the geojson, shapely, and pyproj libraries for common geospatial operations. It demonstrates the full workflow from defining geographic data in GeoJSON format, performing spatial analysis and transformations with Shapely, to converting the results back into GeoJSON.
 
 The example is based on real-world coordinates from Yokohama, Japan.
@@ -18,25 +18,23 @@ Geometric Operations: Creating a 100-meter buffer around a point using Shapely's
 
 Shapely to GeoJSON Conversion: Converting the resulting Shapely geometry back into a structured GeoJSON Feature object, complete with properties.
 
-⚙️ Requirements
+# Requirements
 To run this script, you will need Python 3 and the following libraries:
 
-geojson
-
-shapely
-
-pyproj
+## geojson
+## shapely
+## pyproj
 
 You can install all the required libraries using pip:
 
 pip install geojson shapely pyproj
 
-▶️ How to Run
+#  How to Run
 Once the dependencies are installed, you can run the script directly from your terminal:
 
-python geojson_shapely_example.py
+python example.py
 
-📝 Expected Output
+# Expected Output
 Running the script will print a step-by-step log of its operations to the console, culminating in the final GeoJSON output for the calculated buffer zone.
 
 --- GeoJSON and Shapely Demonstration ---
@@ -80,3 +78,21 @@ Step 5: Converted the buffer Shapely object back to a GeoJSON Feature.
 --- End of Demonstration ---
 
 (Note: The full list of coordinates for the buffer polygon has been truncated for brevity.)
+
+# Data display
+
+1. Online Tools (The Quickest Way)
+
+For a fast and easy visualization, web-based tools are your best bet.
+
+geojson.io: This is the most popular tool for this purpose. It's a free, interactive editor and viewer right in your browser.
+
+Run your Python script: python example.py.
+
+Copy the entire GeoJSON Feature object that is printed to your console.
+
+Go to geojson.io.
+
+Delete the sample text in the editor on the right and paste your copied GeoJSON.
+
+You will immediately see the buffer polygon rendered on the map.
